@@ -1,5 +1,7 @@
+// CONTACT SECTION
+// Mobile First
+
 .contact {
-    //height: 100vh;
     text-align: center;
     &__title {
         width: 100%;
@@ -69,7 +71,6 @@
 }
 
 .contact-submit {
-    display: none;
     background-color: $gray-dark;
     color: $electric-yellow;
     height: 2em;
@@ -79,28 +80,18 @@
     width: 12em; 
 }
 
-.show-contact-submit {
-    display: initial;
-}
-
-
-
-// Contact Form 7
-
+// Contact Form 7 class for alert
 .wpcf7-response-output 
 {
     color: red;
 }
 
+// Size greater than 768px. Ipad and bigger
 @media (min-width: 768px) {
     .contact {
         &__content {
             &__tool {
                 width: 25%;
-            }
-        }
-        &__form {
-            &__footer {
             }
         }
     }
