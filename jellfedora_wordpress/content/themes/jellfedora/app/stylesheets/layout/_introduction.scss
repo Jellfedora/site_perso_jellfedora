@@ -1,0 +1,73 @@
+.introduction {
+    //height: 100vh;
+    width: 100%;
+    text-align: center;
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em;
+        border: 2px solid $electric-yellow;
+        background-color: $gray-dark;
+        
+    
+        &__img {
+            border-right: 2px solid $electric-yellow;
+            margin: auto;
+            margin-top: 0.5em;
+        }
+        
+        &__text {
+            //text-align: justify;
+            padding: 0.5em;
+            //margin: auto;
+            height: 100%;
+            width: 100%;
+            color: $electric-yellow;
+        }
+        &__text a {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Zoom Effect when hover image or text
+
+* {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+.introduction__content__img {
+     position: relative;
+     overflow: hidden;
+     & img {
+        max-width: 100%;
+        -moz-transition: all 1.2s;
+        -webkit-transition: all 1.2s;
+        transition: all 1.2s;
+     }
+}
+
+.introduction:hover img {
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .introduction {
+        &__content {
+            flex-wrap: nowrap;
+            &__img {
+                margin: 0;
+            }
+            &__text {
+                text-align: justify;
+                margin: auto;
+            }
+        }
+    }
+}

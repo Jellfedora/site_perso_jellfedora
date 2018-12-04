@@ -1,0 +1,10 @@
+vendor/
+wp/
+/content/*
+!/content/themes
+/content/themes/*
+!/content/themes/jellfedora
+/content/uploads
+wp-config.php
+/content/themes/jellfedora/node_modules
+/content/themes/jellfedora/public

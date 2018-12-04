@@ -1,0 +1,115 @@
+.contact {
+    //height: 100vh;
+    text-align: center;
+    &__title {
+        width: 100%;
+        padding-top: 3em;
+        padding-bottom: 1em;
+        color: $electric-yellow;
+    }
+    &__content {
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid $electric-yellow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $gray-dark;
+        &__tool {
+            width: 100%;
+            border: 1px solid $electric-yellow;
+            margin: 1em;
+            padding: 1em;
+            background-color: black;
+        }
+        &__tool:hover, &__tool:hover a {
+            background-color: $electric-yellow;
+            color: black;
+        }
+        
+    }
+    &__form {
+        margin: 1em;
+        border: 1px solid $electric-yellow;
+        &__title {
+            background-color: black;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        &__content {
+            background-color: $gray-dark;
+            padding: 0.5em;
+            
+            text-align: left;
+            &__footer {
+                padding: 0.5em;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.contact-input {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: $electric-yellow 1px solid;
+    color: $a-hover;
+    width: 100%;
+    
+}
+
+.contact-textarea {
+    background-color: transparent;
+    border: $electric-yellow 1px solid;
+    color: $a-hover;
+    width: 100%;
+}
+
+.contact-submit {
+    display: none;
+    background-color: $gray-dark;
+    color: $electric-yellow;
+    height: 2em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    border: 1px solid $electric-yellow;
+    width: 12em; 
+}
+
+.show-contact-submit {
+    display: initial;
+}
+
+
+
+// Contact Form 7
+
+.wpcf7-response-output 
+{
+    color: red;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        &__content {
+            &__tool {
+                width: 25%;
+            }
+        }
+        &__form {
+            &__footer {
+            }
+        }
+    }
+    .contact-submit {
+        transition-property: width;
+        transition-duration: 1.5s;
+    }
+    .contact-submit:hover {
+        background-color: black;
+        width: 20em;
+    }
+}

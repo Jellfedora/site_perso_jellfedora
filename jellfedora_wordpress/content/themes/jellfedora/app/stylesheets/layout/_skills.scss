@@ -1,0 +1,38 @@
+.skills {
+    text-align: center;
+    //height: 100vh;
+
+    &__title {
+        width: 100%;
+        padding-top: 3em;
+        color: $electric-yellow;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__skill {
+            width: 100%;
+            background-color: $gray-dark;
+            border: 1px solid $electric-yellow;
+            margin: 1em;
+            color: black;
+            height: 15em;
+            &__title {
+                background-color: black;
+                color: $electric-yellow;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .skills {
+        &__content {
+            &__skill {
+                width: 30%;
+                margin-top: 2em;
+            }
+        }
+    }
+}

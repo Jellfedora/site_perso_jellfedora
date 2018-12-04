@@ -1,0 +1,17 @@
+.portfolio-video-lg {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .portfolio-video-mobile {
+        display: none;
+    }
+
+    .portfolio-video-lg {
+        display: initial;
+    }
+}
