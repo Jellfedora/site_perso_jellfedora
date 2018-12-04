@@ -1,17 +1,19 @@
-# jellfedora
-Mon site personnel
+# Jellfedora
 
-Lancer composer update via le terminal dans la racine du projet.
+## My personal website
 
-Créer la bdd et dupliquer le wp-config-sample :
-- Entrer les données de la bdd
-- Mettre en place le salage
-- modifier define('WP_CONTENT_URL', 'http://_URLDEWORDPRESS_/content' );  Mettre l'url de la home/content
+* Launch composer update via the terminal in the root of the project.
 
-Gérer les accès des fichiers via le terminal:
+* Import the BDD
 
-sudo chown -R <mon-utilisateur>:www-data .
-sudo find . -type f -exec chmod 664 {} +
-sudo find . -type d -exec chmod 775 {} +
-sudo chmod 644 .htaccess
+* Duplicate "wp-config-sample" and rename it to "wp-config"
+
+* Import database and enter data in "wp-config":
+
+* Edit define('WP_CONTENT_URL', 'http://_URLDEWORDPRESS_/content' );  (Put the url of the home / content)
+
+* sudo chown -R <user>:www-data .
+* sudo find . -type f -exec chmod 664 {} +
+* sudo find . -type d -exec chmod 775 {} +
+* sudo chmod 644 .htaccess
 
