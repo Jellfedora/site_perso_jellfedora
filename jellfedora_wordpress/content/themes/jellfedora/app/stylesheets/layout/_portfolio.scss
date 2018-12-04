@@ -1,12 +1,15 @@
+// PORTFOLIO SECTION
+// Mobile First
+
 .portfolio {
     text-align: center;
-    //height: 100vh;
     &__title {
         width: 100%;
         padding-top: 3em;
         padding-bottom: 1em;
         color: $electric-yellow;
     }
+
     &__content {
         border: 1px solid $electric-yellow;
         background-color: $gray-dark;
@@ -19,10 +22,5 @@
         &__text {
             padding: 0.5em;
         }
-    }
-}
-
-@media (min-width: 768px) {
-    .portfolio {
     }
 }
