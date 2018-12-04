@@ -5,14 +5,13 @@ var app = {
     console.log('app.init');
 
 
-    
     // CONTACT
     // Effect on the previous element 
 
     // Repetition à cause de contact form 7, .prev ne fonctionne pas^^ A corriger!
-    $('.effect-name').on('keypress', app.showHoverEffectName);
-    $('.effect-email').on('keypress', app.showHoverEffectEmail);
-    $('.effect-message').on('keypress', app.showHoverEffectMessage);
+    $('.effect-name').on('keypress', app.greenColorInputName);
+    $('.effect-email').on('keypress', app.greenColorInputEmail);
+    $('.effect-message').on('keypress', app.greenColorTextareaMessage);
 
     // SMOOTHSCROLL
     // Smoothscroll to different sections
@@ -44,6 +43,17 @@ var app = {
       },
         'slow');
     });
+  },
+
+  // Grenn color when the Contact input/textarea is informed
+  greenColorInputName: function () {
+    $('.form-name').css('color', "green");
+  },
+  greenColorInputEmail: function () {
+    $('.form-email').css('color', "green");
+  },
+  greenColorTextareaMessage: function () {
+    $('.form-message').css('color', "green");
   },
 }
 
