@@ -1,6 +1,8 @@
+// SKILLS SECTION
+// Mobile First
+
 .skills {
     text-align: center;
-    //height: 100vh;
 
     &__title {
         width: 100%;
@@ -11,6 +13,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         &__skill {
             width: 100%;
             background-color: $gray-dark;
@@ -26,6 +29,7 @@
     }
 }
 
+// Size greater than 768px. Ipad and bigger
 @media (min-width: 768px) {
     .skills {
         &__content {
