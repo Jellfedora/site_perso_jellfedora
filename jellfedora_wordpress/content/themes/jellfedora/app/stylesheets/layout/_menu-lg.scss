@@ -1,5 +1,7 @@
+// LARGE MENU SECTION 
+// For Size greater than 768px. Ipad and bigger
+
 .menu-lg {
-    //padding: 0em 2em;
     width: 100%;
     height: 2em;
     position: fixed;
@@ -15,7 +17,6 @@
 }
 
 .menu-lg li {
-    //display: inline;
     font-weight: bold;
     padding: 0.2em;
     width: 25%;
@@ -26,13 +27,14 @@
 }
 
 .menu-lg li:hover {
-    //color: $a-hover;
     background-color: black;
     border-right: 1px solid $electric-yellow;
     border-left: 1px solid $electric-yellow;
     cursor:  pointer;
 }
 
+
+// Size smaller than 768px --> Smartphones
 @media (max-width: 768px) {
     .menu-lg{
         display: none;
