@@ -23,6 +23,7 @@
             margin: 1em;
             padding: 1em;
             background-color: black;
+            cursor: pointer;
         }
         &__tool:hover, &__tool:hover a {
             background-color: $electric-yellow;
