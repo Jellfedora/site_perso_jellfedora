@@ -1,5 +1,7 @@
+// INTRODUCTION SECTION
+// Mobile First
+
 .introduction {
-    //height: 100vh;
     width: 100%;
     text-align: center;
     &__content {
@@ -9,17 +11,23 @@
         border: 2px solid $electric-yellow;
         background-color: $gray-dark;
         
-    
         &__img {
             border-right: 2px solid $electric-yellow;
             margin: auto;
             margin-top: 0.5em;
+            position: relative;
+            overflow: hidden;
+
+            & img {
+                max-width: 100%;
+                -moz-transition: all 1.2s;
+                -webkit-transition: all 1.2s;
+                transition: all 1.2s;
+            }
         }
         
         &__text {
-            //text-align: justify;
             padding: 0.5em;
-            //margin: auto;
             height: 100%;
             width: 100%;
             color: $electric-yellow;
@@ -32,6 +40,7 @@
 
 // Zoom Effect when hover image or text
 
+// Border Box to All Elements
 * {
      -moz-box-sizing: border-box;
      -webkit-box-sizing: border-box;
@@ -40,23 +49,15 @@
      padding: 0;
 }
 
-.introduction__content__img {
-     position: relative;
-     overflow: hidden;
-     & img {
-        max-width: 100%;
-        -moz-transition: all 1.2s;
-        -webkit-transition: all 1.2s;
-        transition: all 1.2s;
-     }
-}
-
+// Modify the size when img is hover
 .introduction:hover img {
      -moz-transform: scale(1.1);
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
 }
 
+
+// Size greater than 768px. Ipad and bigger
 @media (min-width: 768px) {
     .introduction {
         &__content {
