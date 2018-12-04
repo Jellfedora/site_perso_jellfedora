@@ -14,8 +14,6 @@
                     parcours, une spécialisation Wordpress.</p>
                     <p>Je recherche actuellement une entreprise afin de continuer l'aventure en alternance / contrat de professionnalisation dans le secteur
                     de La Rochelle/ Niort pour préparer le titre "Professionnel Concepteur-Développeur-Informatique" en 12 mois.</p>
-                    <p>Si mon profil vous intéresse vous pouvez télécharger mon Curriculum vitae en cliquant sur le lien ci aprés:
-                    <a href="Cv-Lecointe-Julien-Développement-Web.pdf" download="Cv Lecointe Julien">Télécharger CV</a></p>
                 </div>
             </div>
         </div>
