@@ -5,16 +5,17 @@ var app = {
     console.log('app.init');
 
 
-    // Je créé mes variables pour cibler mes éléments + facilement
     
+    // CONTACT
+    // Effect on the previous element 
 
-    //Effet sur lelement precedent quand on tape dans l'input
-    //Repetition à cause de contact form 7, .prev ne fonctionne pas^^ A corriger!
+    // Repetition à cause de contact form 7, .prev ne fonctionne pas^^ A corriger!
     $('.effect-name').on('keypress', app.showHoverEffectName);
     $('.effect-email').on('keypress', app.showHoverEffectEmail);
     $('.effect-message').on('keypress', app.showHoverEffectMessage);
 
-    //Smoothscroll
+    // SMOOTHSCROLL
+    // Smoothscroll to different sections
 
     $('.go-to-header').click(function () {
       $('html,body').animate({
@@ -44,41 +45,6 @@ var app = {
         'slow');
     });
   },
-
-  showHoverEffectName: function () {
-    $('.form-name',).css('color', "green");
-    if (($('.effect-name')) && ($('.effect-email')) && ($('.effect-message')).val('')) {
-      console.log('coucou name');
-      $('.contact-submit').addClass('show-contact-submit');
-    };
-    
-  },
-
-  showHoverEffectEmail: function () {
-    $('.form-email').css('color', "green");
-    if (($('.effect-name')) && ($('.effect-email')) && ($('.effect-message')).val('')) {
-      console.log('coucou name');
-      $('.contact-submit').addClass('show-contact-submit');
-    };
-  },
-
-  showHoverEffectMessage: function () {
-    $('.form-message').css('color', "green");
-    if ( (($('.effect-name')) && ($('.effect-email')) && ($('.effect-message')) ).val('')) {
-      console.log('coucou name');
-      $('.contact-submit').addClass('show-contact-submit');
-    };
-  },
-
-  showContactSubmit: function () {
-    console.log('contact-submit');
-    $('.contact-submit').addClass('show-contact-submit');
-    
-  },
-  
-
-
-  
 }
 
 $(app.init);
