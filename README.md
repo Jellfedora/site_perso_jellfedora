@@ -1,5 +1,5 @@
 # jellfedora
-My personal website
+Mon site personnel
 
 Lancer composer update via le terminal dans la racine du projet.
 
